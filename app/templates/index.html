@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>检测效果预览</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+</head>
+<body>
+<h1>检测效果预览：</h1>
+{% for image in images %}
+<div>
+    原图: <img src="{{ image.path_input}}" alt="{{ image.name }}" height="300" width="300">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    价格标签: <img src="{{ image.path}}" alt="{{ image.name }}" height="80" width="80">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    提取价格: {{image.price}}
+    <p>-------------------------------- {{image.name}} -------------------------------</p>
+</div>
+{% endfor %}
+</body>
+</html>

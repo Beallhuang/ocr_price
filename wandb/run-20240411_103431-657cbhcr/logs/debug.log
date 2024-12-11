@@ -1,0 +1,27 @@
+2024-04-11 10:34:31,584 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-11 10:34:31,584 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Configure stats pid to 14356
+2024-04-11 10:34:31,584 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Administrator\.config\wandb\settings
+2024-04-11 10:34:31,584 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Loading settings from E:\JD_PROJECT\project\ClassyVision\wandb\settings
+2024-04-11 10:34:31,584 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-11 10:34:31,584 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-11 10:34:31,585 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': 'E:\\JD_PROJECT\\project\\ClassyVision\\train.py', 'program': 'E:\\JD_PROJECT\\project\\ClassyVision\\train.py'}
+2024-04-11 10:34:31,585 INFO    MainThread:14356 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-11 10:34:31,585 INFO    MainThread:14356 [wandb_init.py:_log_setup():521] Logging user logs to E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103431-657cbhcr\logs\debug.log
+2024-04-11 10:34:31,585 INFO    MainThread:14356 [wandb_init.py:_log_setup():522] Logging internal logs to E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103431-657cbhcr\logs\debug-internal.log
+2024-04-11 10:34:31,585 INFO    MainThread:14356 [wandb_init.py:init():561] calling init triggers
+2024-04-11 10:34:31,585 INFO    MainThread:14356 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'weights': 'weights/dingwei.pt', 'cfg': 'data/dingwei/yolov5s_dingwei.yaml', 'data': 'data/dingwei/dingwei.yaml', 'hyp': {'lr0': 0.001, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.00025, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.006250000000000001, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, 'epochs': 20, 'batch_size': 16, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'image_weights': False, 'device': '0', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'log_imgs': 16, 'log_artifacts': False, 'workers': 0, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs\\train\\exp', 'total_batch_size': 16}
+2024-04-11 10:34:31,585 INFO    MainThread:14356 [wandb_init.py:init():611] starting backend
+2024-04-11 10:34:31,586 INFO    MainThread:14356 [wandb_init.py:init():615] setting up manager
+2024-04-11 10:34:31,587 INFO    MainThread:14356 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-04-11 10:34:31,589 INFO    MainThread:14356 [wandb_init.py:init():623] backend started and connected
+2024-04-11 10:34:31,593 INFO    MainThread:14356 [wandb_init.py:init():715] updated telemetry
+2024-04-11 10:34:31,594 INFO    MainThread:14356 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-11 10:34:32,764 INFO    MainThread:14356 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-11 10:34:33,082 INFO    MainThread:14356 [wandb_run.py:_on_init():2366] got version response 
+2024-04-11 10:34:33,082 INFO    MainThread:14356 [wandb_init.py:init():799] starting run threads in backend
+2024-04-11 10:34:38,539 INFO    MainThread:14356 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-11 10:34:38,539 INFO    MainThread:14356 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-11 10:34:38,539 INFO    MainThread:14356 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-11 10:34:38,540 INFO    MainThread:14356 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-11 10:34:38,541 INFO    MainThread:14356 [wandb_init.py:init():842] run started, returning control to user process

@@ -1,0 +1,958 @@
+2024-04-11 10:37:30,755 INFO    StreamThr :6448 [internal.py:wandb_internal():86] W&B internal server running at pid: 6448, started at: 2024-04-11 10:37:30.755140
+2024-04-11 10:37:30,757 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status
+2024-04-11 10:37:30,760 INFO    WriterThread:6448 [datastore.py:open_for_write():87] open: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\run-l6188187.wandb
+2024-04-11 10:37:30,761 DEBUG   SenderThread:6448 [sender.py:send():379] send: header
+2024-04-11 10:37:30,762 DEBUG   SenderThread:6448 [sender.py:send():379] send: run
+2024-04-11 10:37:30,771 INFO    SenderThread:6448 [sender.py:_setup_resume():749] checking resume status for None/YOLOv5/l6188187
+2024-04-11 10:37:31,877 INFO    SenderThread:6448 [dir_watcher.py:__init__():211] watching files in: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files
+2024-04-11 10:37:31,877 INFO    SenderThread:6448 [sender.py:_start_run_threads():1124] run started: l6188187 with start time 1712803050.75617
+2024-04-11 10:37:31,886 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: check_version
+2024-04-11 10:37:31,886 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: check_version
+2024-04-11 10:37:33,179 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: run_start
+2024-04-11 10:37:33,198 DEBUG   HandlerThread:6448 [system_info.py:__init__():26] System info init
+2024-04-11 10:37:33,199 DEBUG   HandlerThread:6448 [system_info.py:__init__():41] System info init done
+2024-04-11 10:37:33,199 INFO    HandlerThread:6448 [system_monitor.py:start():194] Starting system monitor
+2024-04-11 10:37:33,199 INFO    SystemMonitor:6448 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-11 10:37:33,200 INFO    HandlerThread:6448 [system_monitor.py:probe():214] Collecting system info
+2024-04-11 10:37:33,202 INFO    SystemMonitor:6448 [interfaces.py:start():190] Started cpu monitoring
+2024-04-11 10:37:33,203 INFO    SystemMonitor:6448 [interfaces.py:start():190] Started disk monitoring
+2024-04-11 10:37:33,203 INFO    SystemMonitor:6448 [interfaces.py:start():190] Started gpu monitoring
+2024-04-11 10:37:33,207 INFO    SystemMonitor:6448 [interfaces.py:start():190] Started memory monitoring
+2024-04-11 10:37:33,215 INFO    SystemMonitor:6448 [interfaces.py:start():190] Started network monitoring
+2024-04-11 10:37:33,217 DEBUG   HandlerThread:6448 [system_info.py:probe():150] Probing system
+2024-04-11 10:37:33,218 DEBUG   HandlerThread:6448 [system_info.py:_probe_git():135] Probing git
+2024-04-11 10:37:33,219 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:33,219 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:33,249 DEBUG   HandlerThread:6448 [system_info.py:_probe_git():143] Probing git done
+2024-04-11 10:37:33,249 DEBUG   HandlerThread:6448 [system_info.py:probe():198] Probing system done
+2024-04-11 10:37:33,249 DEBUG   HandlerThread:6448 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.14', 'heartbeatAt': '2024-04-11T02:37:33.217777', 'startedAt': '2024-04-11T02:37:30.749156', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'E:\\JD_PROJECT\\project\\ClassyVision\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': None, 'commit': None}, 'email': None, 'root': 'E:/JD_PROJECT/project/ClassyVision', 'host': 'DZA-4CE139BDJQ', 'username': 'Administrator', 'executable': 'D:\\Users\\Administrator\\anaconda3\\envs\\ClassyVision2\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2904.0, 'min': 0.0, 'max': 2904.0}, 'cpu_freq_per_core': [{'current': 2904.0, 'min': 0.0, 'max': 2904.0}], 'disk': {'/': {'total': 1745.8271446228027, 'used': 79.63774871826172}}, 'gpu': 'Quadro P1000', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro P1000', 'memory_total': 4294967296}], 'memory': {'total': 31.781455993652344}}
+2024-04-11 10:37:33,249 INFO    HandlerThread:6448 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-11 10:37:33,249 INFO    HandlerThread:6448 [system_monitor.py:probe():227] Publishing system info
+2024-04-11 10:37:33,249 DEBUG   HandlerThread:6448 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-11 10:37:33,888 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\conda-environment.yaml
+2024-04-11 10:37:35,235 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:35,235 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:37,251 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:37,251 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:38,384 DEBUG   HandlerThread:6448 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-11 10:37:38,385 INFO    HandlerThread:6448 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-11 10:37:38,394 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:37:38,395 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-11 10:37:38,395 DEBUG   SenderThread:6448 [sender.py:send():379] send: files
+2024-04-11 10:37:38,395 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-11 10:37:38,632 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-11 10:37:38,632 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: python_packages
+2024-04-11 10:37:38,632 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:37:38,633 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:37:38,634 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:37:38,940 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\conda-environment.yaml
+2024-04-11 10:37:38,941 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\wandb-metadata.json
+2024-04-11 10:37:38,941 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\requirements.txt
+2024-04-11 10:37:39,188 DEBUG   SenderThread:6448 [sender.py:send():379] send: telemetry
+2024-04-11 10:37:39,268 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:39,268 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:39,955 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:37:41,195 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:37:41,285 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:41,285 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:41,965 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:37:41,977 DEBUG   SenderThread:6448 [sender.py:send():379] send: files
+2024-04-11 10:37:41,978 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file media\images\Labels_0_7b7bbe6d6ad3ad4e2a51.jpg with policy now
+2024-04-11 10:37:41,983 DEBUG   SenderThread:6448 [sender.py:send():379] send: files
+2024-04-11 10:37:41,983 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file media\images\Labels_0_dc702dc1a9f49492fdb7.jpg with policy now
+2024-04-11 10:37:42,000 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:37:42,971 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media\images\Labels_0_dc702dc1a9f49492fdb7.jpg
+2024-04-11 10:37:42,972 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media\images\Labels_0_7b7bbe6d6ad3ad4e2a51.jpg
+2024-04-11 10:37:42,972 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media\images
+2024-04-11 10:37:42,973 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media
+2024-04-11 10:37:43,295 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:43,295 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:43,980 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:37:45,307 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:45,307 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:47,081 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:37:47,327 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:47,327 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:49,345 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:49,346 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:51,361 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:51,361 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:52,116 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:37:53,383 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:53,383 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:53,638 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:37:53,639 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:37:53,639 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:37:55,402 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:55,402 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:57,412 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:57,412 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:57,950 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:37:59,422 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:37:59,422 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:00,322 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/wandb-metadata.json?Expires=1712889458&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=sDXxXu87JG%2Bnw%2Bc6r8Rjd7B5Gpr8J%2FocaJ%2BJyJlLqKp7DSggTdEQi8SoIeKKw8AKZGQCapVkaNAIJCLRywTNzWX2%2FPIl0dUkR03kmwojxPaOw825zc7rRA1BNwEmxpYy%2Fc2Bwaq89amkH3BCAyDcsaNw%2F%2Bk4dHTXEzEY99KZYS0u2peT3frM4ZHpOO3IZNixTG49TJWT7RCe%2FyTzO%2Bfo4NjaJMGEUQlbu2AgJBf9zPFmLxYEqyh3XQFd9oNxBi0rxDmTpYmCcASYoKrBFjFUyrpGDfWEOZtknlsInGFLpDyOFz5DBBqbeR1KgZ%2BbNPyZU06fkqnGqAIbsUb7ITfDVA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:00,322 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1342'}
+2024-04-11 10:38:00,322 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:01,435 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:01,435 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:02,995 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:03,474 ERROR   gpu       :6448 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-04-11 10:38:03,475 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:03,475 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:03,534 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_7b7bbe6d6ad3ad4e2a51.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=SLxN2GVQytqbNgFurW9Zqi1UhEEmn2Q4LU%2ByieuVOA6hk1bxy5STU%2BCO7TSwNtrHfPj8F0Anh8Vvdgmhmmerrp3wqBdQPNQBELtuc%2BzirJ7Wapc9VyrjZebXBA1qYAxSbN607Itd2Z3FB%2FCraMeyfvY7ubUeCWhgjU2O6GD4ZRAR9nroN9lccDcTLD%2FCN38U8E8xBEQ0umDiO%2F%2BeY%2FXd1DJDO1HbZzWaFOAeBFlRvBYtJb30zH6EM3Qe1duMJ4p0Q02CWFyUxhe%2FsTiZcyxiBx%2FlV%2B%2Bqbr6dur93fSCG9XZzRafgPiNc%2BajRZ5GUirpn46U3tA1Pz2kwmmp9TceFBw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:03,534 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '99194'}
+2024-04-11 10:38:03,535 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:03,544 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_dc702dc1a9f49492fdb7.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=S5PPmoQ9byf8AuzIOL3YGJwA%2BGimLKHR2svUnuUPjAF%2FyBa23ghf48VLveo8%2FVNdGw6Kn%2Ff3VtGTZOqICm9llNQDApFjcfwRfTb0bsLDMIVzcu7wgR497fvqi83BpavlQUeHAdrgPOpDHDbZuEYGforZGZAMqATDzRI6BDhosDuxBRgPun7atPWtn9HRxSPnEJJa81mI4VfcmmzUcEGJUVEWCMZZl1ajAI6jargHyxMiMvAgoB08AoKJvCaps4l5mJahA9BDPHRpKaoeWGGNcjqnmGnDzt0qN0OgFQjaKWygInMQXoZvwqEF31C%2BljWnXEx38rlUFW6suP85IzceUA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:03,544 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '161962'}
+2024-04-11 10:38:03,545 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:04,117 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\config.yaml
+2024-04-11 10:38:05,477 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:05,477 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:07,493 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:07,493 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:08,278 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:08,639 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:38:08,639 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:38:08,640 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:38:09,503 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:09,503 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:11,519 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:11,519 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:13,534 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:13,534 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:14,032 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:15,542 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:15,542 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:16,229 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:17,561 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:17,561 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:18,242 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:19,388 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:19,577 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:19,577 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:20,254 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:21,588 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:21,588 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:22,258 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:22,858 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/wandb-metadata.json?Expires=1712889458&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=sDXxXu87JG%2Bnw%2Bc6r8Rjd7B5Gpr8J%2FocaJ%2BJyJlLqKp7DSggTdEQi8SoIeKKw8AKZGQCapVkaNAIJCLRywTNzWX2%2FPIl0dUkR03kmwojxPaOw825zc7rRA1BNwEmxpYy%2Fc2Bwaq89amkH3BCAyDcsaNw%2F%2Bk4dHTXEzEY99KZYS0u2peT3frM4ZHpOO3IZNixTG49TJWT7RCe%2FyTzO%2Bfo4NjaJMGEUQlbu2AgJBf9zPFmLxYEqyh3XQFd9oNxBi0rxDmTpYmCcASYoKrBFjFUyrpGDfWEOZtknlsInGFLpDyOFz5DBBqbeR1KgZ%2BbNPyZU06fkqnGqAIbsUb7ITfDVA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:22,858 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1342'}
+2024-04-11 10:38:22,858 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:23,597 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:23,597 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:23,650 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:38:23,650 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:38:23,651 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:38:24,266 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:24,692 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:25,608 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:25,608 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:25,997 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_7b7bbe6d6ad3ad4e2a51.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=SLxN2GVQytqbNgFurW9Zqi1UhEEmn2Q4LU%2ByieuVOA6hk1bxy5STU%2BCO7TSwNtrHfPj8F0Anh8Vvdgmhmmerrp3wqBdQPNQBELtuc%2BzirJ7Wapc9VyrjZebXBA1qYAxSbN607Itd2Z3FB%2FCraMeyfvY7ubUeCWhgjU2O6GD4ZRAR9nroN9lccDcTLD%2FCN38U8E8xBEQ0umDiO%2F%2BeY%2FXd1DJDO1HbZzWaFOAeBFlRvBYtJb30zH6EM3Qe1duMJ4p0Q02CWFyUxhe%2FsTiZcyxiBx%2FlV%2B%2Bqbr6dur93fSCG9XZzRafgPiNc%2BajRZ5GUirpn46U3tA1Pz2kwmmp9TceFBw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:25,997 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '99194'}
+2024-04-11 10:38:25,997 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:26,217 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_dc702dc1a9f49492fdb7.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=S5PPmoQ9byf8AuzIOL3YGJwA%2BGimLKHR2svUnuUPjAF%2FyBa23ghf48VLveo8%2FVNdGw6Kn%2Ff3VtGTZOqICm9llNQDApFjcfwRfTb0bsLDMIVzcu7wgR497fvqi83BpavlQUeHAdrgPOpDHDbZuEYGforZGZAMqATDzRI6BDhosDuxBRgPun7atPWtn9HRxSPnEJJa81mI4VfcmmzUcEGJUVEWCMZZl1ajAI6jargHyxMiMvAgoB08AoKJvCaps4l5mJahA9BDPHRpKaoeWGGNcjqnmGnDzt0qN0OgFQjaKWygInMQXoZvwqEF31C%2BljWnXEx38rlUFW6suP85IzceUA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:26,218 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '161962'}
+2024-04-11 10:38:26,218 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:26,273 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:27,220 DEBUG   SenderThread:6448 [sender.py:send():379] send: files
+2024-04-11 10:38:27,220 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file media\images\Mosaics_0_48278ab5587e817d7f89.jpg with policy now
+2024-04-11 10:38:27,225 DEBUG   SenderThread:6448 [sender.py:send():379] send: files
+2024-04-11 10:38:27,225 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file media\images\Mosaics_0_a46177c02731e285c55f.jpg with policy now
+2024-04-11 10:38:27,229 DEBUG   SenderThread:6448 [sender.py:send():379] send: files
+2024-04-11 10:38:27,229 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file media\images\Mosaics_0_7048b5fcc2452409d640.jpg with policy now
+2024-04-11 10:38:27,247 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:38:27,288 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media\images\Mosaics_0_a46177c02731e285c55f.jpg
+2024-04-11 10:38:27,289 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media\images\Mosaics_0_7048b5fcc2452409d640.jpg
+2024-04-11 10:38:27,289 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media\images\Mosaics_0_48278ab5587e817d7f89.jpg
+2024-04-11 10:38:27,290 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\media\images
+2024-04-11 10:38:27,625 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:27,625 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:28,289 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:29,641 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:29,641 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:29,791 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:30,320 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:31,656 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:31,656 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:32,350 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:33,215 DEBUG   SystemMonitor:6448 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-11 10:38:33,216 DEBUG   SenderThread:6448 [sender.py:send():379] send: stats
+2024-04-11 10:38:33,689 ERROR   gpu       :6448 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-04-11 10:38:33,690 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:33,690 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:34,359 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:35,105 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:35,700 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:35,700 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:36,371 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:37,709 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:37,709 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:38,382 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:38,645 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:38:38,646 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:38:38,661 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:38:39,718 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:39,718 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:40,310 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:40,407 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:41,730 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:41,731 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:42,414 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:43,739 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:43,739 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:44,429 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:45,509 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:45,754 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:45,754 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:46,357 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/wandb-metadata.json?Expires=1712889458&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=sDXxXu87JG%2Bnw%2Bc6r8Rjd7B5Gpr8J%2FocaJ%2BJyJlLqKp7DSggTdEQi8SoIeKKw8AKZGQCapVkaNAIJCLRywTNzWX2%2FPIl0dUkR03kmwojxPaOw825zc7rRA1BNwEmxpYy%2Fc2Bwaq89amkH3BCAyDcsaNw%2F%2Bk4dHTXEzEY99KZYS0u2peT3frM4ZHpOO3IZNixTG49TJWT7RCe%2FyTzO%2Bfo4NjaJMGEUQlbu2AgJBf9zPFmLxYEqyh3XQFd9oNxBi0rxDmTpYmCcASYoKrBFjFUyrpGDfWEOZtknlsInGFLpDyOFz5DBBqbeR1KgZ%2BbNPyZU06fkqnGqAIbsUb7ITfDVA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:46,357 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1342'}
+2024-04-11 10:38:46,357 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:46,357 INFO    wandb-upload_0:6448 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2791, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2024-04-11 10:38:46,456 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:47,773 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:47,773 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:48,478 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:48,823 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_a46177c02731e285c55f.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=ugn8LHqiZoyVmAcrFR5PhrFldwPkJa72QPnhYQTyo3qB8EPV9SSgKkUHo3VL293xrsZpjArkEot%2FLko0WmDH5UcyuYssNk548jEUWX4ukrotL017gECD1ZNkNdIQ8Hu7p4nVtobrt3fqFgLPuRw2x6Zn9aJyXzEq9z669B62TkBtbrFOAjR4CiRdXpQjc4d1p2otVzpnhFvGd8R163qa4qwMiBFZiUGBnz%2B3aHoL8HuckCTDKs2WamkULYREhXPHW%2BQKFY2KtTy2IdCDs4Ko9VFZZaV0RlYf1z3iR10zR1JAoIE4stt3pAo42K8dG2MONOiXB5NZOFE0LA6pxaK2lQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:48,823 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '252096'}
+2024-04-11 10:38:48,823 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:48,823 INFO    wandb-upload_4:6448 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2791, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2024-04-11 10:38:48,915 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_48278ab5587e817d7f89.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jAnzMBXALnH9tgDnapLCaZcNQ6a18IzUvERoq%2FIMINO%2Fd%2F0Zj2NKhagEUgAkD1rchWsqyI9pBvWOC0xZbow0yqmKxqFMQWVDvlEHYnVOlCNjKYdGIy6SaxYUKroHhSuLBtrKXWDz9kVCUZ3R9aoD0feRi2UkiV8H2NK3XilnyNnQiyqA4il4gMJ%2BU8Crq5yeiyt8LT6OqFYmIpiSzVZksZ%2FpERXO6tfHx7HmxkXGdYYhragIuGS4GkGR9tolgJWm1lCzSggwEX%2BWXFUoQhiSjrZX%2Bk%2FZ7wH8I4zYfyr65%2F09vPCqbXrNoE7Bz2PkdndkbtGXHWl7OpRHfiR%2FM%2F6P%2Bw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:48,915 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '259387'}
+2024-04-11 10:38:48,916 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:48,916 INFO    wandb-upload_3:6448 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2791, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2024-04-11 10:38:49,040 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_7048b5fcc2452409d640.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=rp0jPBaMSUTgd8UGhqvnNplCDAA5o%2FXyLpAonvDYp7OKUiXSIVWdR6zC1RC0sJs4o37IBxYJFVCoWicqnkO5XciD5fM%2BoZrVteCi9RlvL1Xr0Vyi5Ic8Wm1f7aP8LZJXrlc7xi0nd1qmSmTXYzH9TdX1ff6D%2BXbpnP9rXh5kx7Mr%2BAocn0aPwNtgvCUoilKQeH%2FpVDjlx2YEBTrx8cDu%2FM2iObMkljOn3H7kMCkd9l2lTCpD1UUoGHcfNHKUDtP4X7byroWqIlD77EXdf95qEdEObB0WNMEqs6Q5UuruY1D5cGCGGGWldQwH0EkSlVY5GSvYG9wF%2Fdzy8B9vPhCRgA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:49,040 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '208107'}
+2024-04-11 10:38:49,040 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:49,040 INFO    wandb-upload_5:6448 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2791, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2024-04-11 10:38:49,789 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:49,789 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:49,944 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_7b7bbe6d6ad3ad4e2a51.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=SLxN2GVQytqbNgFurW9Zqi1UhEEmn2Q4LU%2ByieuVOA6hk1bxy5STU%2BCO7TSwNtrHfPj8F0Anh8Vvdgmhmmerrp3wqBdQPNQBELtuc%2BzirJ7Wapc9VyrjZebXBA1qYAxSbN607Itd2Z3FB%2FCraMeyfvY7ubUeCWhgjU2O6GD4ZRAR9nroN9lccDcTLD%2FCN38U8E8xBEQ0umDiO%2F%2BeY%2FXd1DJDO1HbZzWaFOAeBFlRvBYtJb30zH6EM3Qe1duMJ4p0Q02CWFyUxhe%2FsTiZcyxiBx%2FlV%2B%2Bqbr6dur93fSCG9XZzRafgPiNc%2BajRZ5GUirpn46U3tA1Pz2kwmmp9TceFBw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:49,944 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '99194'}
+2024-04-11 10:38:49,945 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:49,945 INFO    wandb-upload_1:6448 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\ssl.py", line 1375, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2791, in upload_file
+    raise _e.with_traceback(sys.exc_info()[2])
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\wandb\sdk\internal\internal_api.py", line 2760, in upload_file
+    response = self._upload_file_session.put(
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 649, in put
+    return self.request("PUT", url, data=data, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\Administrator\anaconda3\envs\ClassyVision2\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2024-04-11 10:38:50,207 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_dc702dc1a9f49492fdb7.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=S5PPmoQ9byf8AuzIOL3YGJwA%2BGimLKHR2svUnuUPjAF%2FyBa23ghf48VLveo8%2FVNdGw6Kn%2Ff3VtGTZOqICm9llNQDApFjcfwRfTb0bsLDMIVzcu7wgR497fvqi83BpavlQUeHAdrgPOpDHDbZuEYGforZGZAMqATDzRI6BDhosDuxBRgPun7atPWtn9HRxSPnEJJa81mI4VfcmmzUcEGJUVEWCMZZl1ajAI6jargHyxMiMvAgoB08AoKJvCaps4l5mJahA9BDPHRpKaoeWGGNcjqnmGnDzt0qN0OgFQjaKWygInMQXoZvwqEF31C%2BljWnXEx38rlUFW6suP85IzceUA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:38:50,207 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '161962'}
+2024-04-11 10:38:50,207 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:38:50,490 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:50,732 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:51,805 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:51,805 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:52,507 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:53,655 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:38:53,655 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:38:53,670 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:38:53,824 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:53,825 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:54,522 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:55,839 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:55,839 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:55,960 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:38:56,546 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:57,558 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:57,850 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:57,850 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:59,582 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:38:59,867 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:38:59,867 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:01,145 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:01,598 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:01,883 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:01,883 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:03,225 DEBUG   SenderThread:6448 [sender.py:send():379] send: stats
+2024-04-11 10:39:03,623 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:03,913 ERROR   gpu       :6448 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-04-11 10:39:03,914 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:03,914 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:05,915 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:05,915 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:06,259 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:07,924 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:07,924 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:08,666 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:39:08,666 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:39:08,682 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:39:09,935 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:09,935 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:11,343 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_48278ab5587e817d7f89.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jAnzMBXALnH9tgDnapLCaZcNQ6a18IzUvERoq%2FIMINO%2Fd%2F0Zj2NKhagEUgAkD1rchWsqyI9pBvWOC0xZbow0yqmKxqFMQWVDvlEHYnVOlCNjKYdGIy6SaxYUKroHhSuLBtrKXWDz9kVCUZ3R9aoD0feRi2UkiV8H2NK3XilnyNnQiyqA4il4gMJ%2BU8Crq5yeiyt8LT6OqFYmIpiSzVZksZ%2FpERXO6tfHx7HmxkXGdYYhragIuGS4GkGR9tolgJWm1lCzSggwEX%2BWXFUoQhiSjrZX%2Bk%2FZ7wH8I4zYfyr65%2F09vPCqbXrNoE7Bz2PkdndkbtGXHWl7OpRHfiR%2FM%2F6P%2Bw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:11,344 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '259387'}
+2024-04-11 10:39:11,344 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:11,453 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_a46177c02731e285c55f.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=ugn8LHqiZoyVmAcrFR5PhrFldwPkJa72QPnhYQTyo3qB8EPV9SSgKkUHo3VL293xrsZpjArkEot%2FLko0WmDH5UcyuYssNk548jEUWX4ukrotL017gECD1ZNkNdIQ8Hu7p4nVtobrt3fqFgLPuRw2x6Zn9aJyXzEq9z669B62TkBtbrFOAjR4CiRdXpQjc4d1p2otVzpnhFvGd8R163qa4qwMiBFZiUGBnz%2B3aHoL8HuckCTDKs2WamkULYREhXPHW%2BQKFY2KtTy2IdCDs4Ko9VFZZaV0RlYf1z3iR10zR1JAoIE4stt3pAo42K8dG2MONOiXB5NZOFE0LA6pxaK2lQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:11,454 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '252096'}
+2024-04-11 10:39:11,454 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:11,503 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_7048b5fcc2452409d640.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=rp0jPBaMSUTgd8UGhqvnNplCDAA5o%2FXyLpAonvDYp7OKUiXSIVWdR6zC1RC0sJs4o37IBxYJFVCoWicqnkO5XciD5fM%2BoZrVteCi9RlvL1Xr0Vyi5Ic8Wm1f7aP8LZJXrlc7xi0nd1qmSmTXYzH9TdX1ff6D%2BXbpnP9rXh5kx7Mr%2BAocn0aPwNtgvCUoilKQeH%2FpVDjlx2YEBTrx8cDu%2FM2iObMkljOn3H7kMCkd9l2lTCpD1UUoGHcfNHKUDtP4X7byroWqIlD77EXdf95qEdEObB0WNMEqs6Q5UuruY1D5cGCGGGWldQwH0EkSlVY5GSvYG9wF%2Fdzy8B9vPhCRgA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:11,503 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '208107'}
+2024-04-11 10:39:11,503 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:11,950 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:11,951 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:12,013 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:12,406 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/wandb-metadata.json?Expires=1712889458&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=sDXxXu87JG%2Bnw%2Bc6r8Rjd7B5Gpr8J%2FocaJ%2BJyJlLqKp7DSggTdEQi8SoIeKKw8AKZGQCapVkaNAIJCLRywTNzWX2%2FPIl0dUkR03kmwojxPaOw825zc7rRA1BNwEmxpYy%2Fc2Bwaq89amkH3BCAyDcsaNw%2F%2Bk4dHTXEzEY99KZYS0u2peT3frM4ZHpOO3IZNixTG49TJWT7RCe%2FyTzO%2Bfo4NjaJMGEUQlbu2AgJBf9zPFmLxYEqyh3XQFd9oNxBi0rxDmTpYmCcASYoKrBFjFUyrpGDfWEOZtknlsInGFLpDyOFz5DBBqbeR1KgZ%2BbNPyZU06fkqnGqAIbsUb7ITfDVA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:12,406 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1342'}
+2024-04-11 10:39:12,406 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:13,963 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:13,963 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:15,670 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_7b7bbe6d6ad3ad4e2a51.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=SLxN2GVQytqbNgFurW9Zqi1UhEEmn2Q4LU%2ByieuVOA6hk1bxy5STU%2BCO7TSwNtrHfPj8F0Anh8Vvdgmhmmerrp3wqBdQPNQBELtuc%2BzirJ7Wapc9VyrjZebXBA1qYAxSbN607Itd2Z3FB%2FCraMeyfvY7ubUeCWhgjU2O6GD4ZRAR9nroN9lccDcTLD%2FCN38U8E8xBEQ0umDiO%2F%2BeY%2FXd1DJDO1HbZzWaFOAeBFlRvBYtJb30zH6EM3Qe1duMJ4p0Q02CWFyUxhe%2FsTiZcyxiBx%2FlV%2B%2Bqbr6dur93fSCG9XZzRafgPiNc%2BajRZ5GUirpn46U3tA1Pz2kwmmp9TceFBw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:15,670 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '99194'}
+2024-04-11 10:39:15,670 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:15,980 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:15,980 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:16,230 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_dc702dc1a9f49492fdb7.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=S5PPmoQ9byf8AuzIOL3YGJwA%2BGimLKHR2svUnuUPjAF%2FyBa23ghf48VLveo8%2FVNdGw6Kn%2Ff3VtGTZOqICm9llNQDApFjcfwRfTb0bsLDMIVzcu7wgR497fvqi83BpavlQUeHAdrgPOpDHDbZuEYGforZGZAMqATDzRI6BDhosDuxBRgPun7atPWtn9HRxSPnEJJa81mI4VfcmmzUcEGJUVEWCMZZl1ajAI6jargHyxMiMvAgoB08AoKJvCaps4l5mJahA9BDPHRpKaoeWGGNcjqnmGnDzt0qN0OgFQjaKWygInMQXoZvwqEF31C%2BljWnXEx38rlUFW6suP85IzceUA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:16,230 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '161962'}
+2024-04-11 10:39:16,230 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:17,062 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:18,002 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:18,002 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:20,011 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:20,011 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:22,026 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:22,026 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:22,111 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:23,653 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:39:23,654 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:39:23,685 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:39:24,040 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:24,040 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:26,055 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:26,055 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:27,955 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:28,071 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:28,072 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:30,081 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:30,081 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:32,101 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:32,101 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:33,235 DEBUG   SenderThread:6448 [sender.py:send():379] send: stats
+2024-04-11 10:39:33,236 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:33,911 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:34,141 ERROR   gpu       :6448 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-04-11 10:39:34,142 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:34,142 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:34,972 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_48278ab5587e817d7f89.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jAnzMBXALnH9tgDnapLCaZcNQ6a18IzUvERoq%2FIMINO%2Fd%2F0Zj2NKhagEUgAkD1rchWsqyI9pBvWOC0xZbow0yqmKxqFMQWVDvlEHYnVOlCNjKYdGIy6SaxYUKroHhSuLBtrKXWDz9kVCUZ3R9aoD0feRi2UkiV8H2NK3XilnyNnQiyqA4il4gMJ%2BU8Crq5yeiyt8LT6OqFYmIpiSzVZksZ%2FpERXO6tfHx7HmxkXGdYYhragIuGS4GkGR9tolgJWm1lCzSggwEX%2BWXFUoQhiSjrZX%2Bk%2FZ7wH8I4zYfyr65%2F09vPCqbXrNoE7Bz2PkdndkbtGXHWl7OpRHfiR%2FM%2F6P%2Bw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:34,972 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '259387'}
+2024-04-11 10:39:34,972 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:35,007 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_a46177c02731e285c55f.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=ugn8LHqiZoyVmAcrFR5PhrFldwPkJa72QPnhYQTyo3qB8EPV9SSgKkUHo3VL293xrsZpjArkEot%2FLko0WmDH5UcyuYssNk548jEUWX4ukrotL017gECD1ZNkNdIQ8Hu7p4nVtobrt3fqFgLPuRw2x6Zn9aJyXzEq9z669B62TkBtbrFOAjR4CiRdXpQjc4d1p2otVzpnhFvGd8R163qa4qwMiBFZiUGBnz%2B3aHoL8HuckCTDKs2WamkULYREhXPHW%2BQKFY2KtTy2IdCDs4Ko9VFZZaV0RlYf1z3iR10zR1JAoIE4stt3pAo42K8dG2MONOiXB5NZOFE0LA6pxaK2lQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:35,007 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '252096'}
+2024-04-11 10:39:35,007 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:35,177 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_7048b5fcc2452409d640.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=rp0jPBaMSUTgd8UGhqvnNplCDAA5o%2FXyLpAonvDYp7OKUiXSIVWdR6zC1RC0sJs4o37IBxYJFVCoWicqnkO5XciD5fM%2BoZrVteCi9RlvL1Xr0Vyi5Ic8Wm1f7aP8LZJXrlc7xi0nd1qmSmTXYzH9TdX1ff6D%2BXbpnP9rXh5kx7Mr%2BAocn0aPwNtgvCUoilKQeH%2FpVDjlx2YEBTrx8cDu%2FM2iObMkljOn3H7kMCkd9l2lTCpD1UUoGHcfNHKUDtP4X7byroWqIlD77EXdf95qEdEObB0WNMEqs6Q5UuruY1D5cGCGGGWldQwH0EkSlVY5GSvYG9wF%2Fdzy8B9vPhCRgA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:35,177 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '208107'}
+2024-04-11 10:39:35,177 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:36,144 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:36,144 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:38,154 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:38,154 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:38,263 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:38,657 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:39:38,658 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:39:38,688 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:39:40,168 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:40,168 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:41,732 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/wandb-metadata.json?Expires=1712889458&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=sDXxXu87JG%2Bnw%2Bc6r8Rjd7B5Gpr8J%2FocaJ%2BJyJlLqKp7DSggTdEQi8SoIeKKw8AKZGQCapVkaNAIJCLRywTNzWX2%2FPIl0dUkR03kmwojxPaOw825zc7rRA1BNwEmxpYy%2Fc2Bwaq89amkH3BCAyDcsaNw%2F%2Bk4dHTXEzEY99KZYS0u2peT3frM4ZHpOO3IZNixTG49TJWT7RCe%2FyTzO%2Bfo4NjaJMGEUQlbu2AgJBf9zPFmLxYEqyh3XQFd9oNxBi0rxDmTpYmCcASYoKrBFjFUyrpGDfWEOZtknlsInGFLpDyOFz5DBBqbeR1KgZ%2BbNPyZU06fkqnGqAIbsUb7ITfDVA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:41,732 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1342'}
+2024-04-11 10:39:41,732 ERROR   wandb-upload_0:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:41,971 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:42,177 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:42,177 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:43,628 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:43,989 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:44,187 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:44,187 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:46,012 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:46,211 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:46,211 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:46,589 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_dc702dc1a9f49492fdb7.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=S5PPmoQ9byf8AuzIOL3YGJwA%2BGimLKHR2svUnuUPjAF%2FyBa23ghf48VLveo8%2FVNdGw6Kn%2Ff3VtGTZOqICm9llNQDApFjcfwRfTb0bsLDMIVzcu7wgR497fvqi83BpavlQUeHAdrgPOpDHDbZuEYGforZGZAMqATDzRI6BDhosDuxBRgPun7atPWtn9HRxSPnEJJa81mI4VfcmmzUcEGJUVEWCMZZl1ajAI6jargHyxMiMvAgoB08AoKJvCaps4l5mJahA9BDPHRpKaoeWGGNcjqnmGnDzt0qN0OgFQjaKWygInMQXoZvwqEF31C%2BljWnXEx38rlUFW6suP85IzceUA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:46,589 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '161962'}
+2024-04-11 10:39:46,590 ERROR   wandb-upload_2:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:47,018 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Labels_0_7b7bbe6d6ad3ad4e2a51.jpg?Expires=1712889462&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=SLxN2GVQytqbNgFurW9Zqi1UhEEmn2Q4LU%2ByieuVOA6hk1bxy5STU%2BCO7TSwNtrHfPj8F0Anh8Vvdgmhmmerrp3wqBdQPNQBELtuc%2BzirJ7Wapc9VyrjZebXBA1qYAxSbN607Itd2Z3FB%2FCraMeyfvY7ubUeCWhgjU2O6GD4ZRAR9nroN9lccDcTLD%2FCN38U8E8xBEQ0umDiO%2F%2BeY%2FXd1DJDO1HbZzWaFOAeBFlRvBYtJb30zH6EM3Qe1duMJ4p0Q02CWFyUxhe%2FsTiZcyxiBx%2FlV%2B%2Bqbr6dur93fSCG9XZzRafgPiNc%2BajRZ5GUirpn46U3tA1Pz2kwmmp9TceFBw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:39:47,018 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '99194'}
+2024-04-11 10:39:47,018 ERROR   wandb-upload_1:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:39:48,016 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:48,227 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:48,227 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:49,519 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:50,035 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:50,246 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:50,246 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:52,055 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:52,269 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:52,269 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:53,664 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:39:53,665 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:39:53,696 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:39:54,073 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:54,290 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:54,290 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:54,688 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:39:56,090 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:56,306 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:56,306 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:58,098 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:39:58,321 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:39:58,321 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:00,335 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:00,335 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:00,508 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:40:00,717 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_a46177c02731e285c55f.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=ugn8LHqiZoyVmAcrFR5PhrFldwPkJa72QPnhYQTyo3qB8EPV9SSgKkUHo3VL293xrsZpjArkEot%2FLko0WmDH5UcyuYssNk548jEUWX4ukrotL017gECD1ZNkNdIQ8Hu7p4nVtobrt3fqFgLPuRw2x6Zn9aJyXzEq9z669B62TkBtbrFOAjR4CiRdXpQjc4d1p2otVzpnhFvGd8R163qa4qwMiBFZiUGBnz%2B3aHoL8HuckCTDKs2WamkULYREhXPHW%2BQKFY2KtTy2IdCDs4Ko9VFZZaV0RlYf1z3iR10zR1JAoIE4stt3pAo42K8dG2MONOiXB5NZOFE0LA6pxaK2lQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:40:00,717 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '252096'}
+2024-04-11 10:40:00,717 ERROR   wandb-upload_4:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:40:01,330 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_48278ab5587e817d7f89.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jAnzMBXALnH9tgDnapLCaZcNQ6a18IzUvERoq%2FIMINO%2Fd%2F0Zj2NKhagEUgAkD1rchWsqyI9pBvWOC0xZbow0yqmKxqFMQWVDvlEHYnVOlCNjKYdGIy6SaxYUKroHhSuLBtrKXWDz9kVCUZ3R9aoD0feRi2UkiV8H2NK3XilnyNnQiyqA4il4gMJ%2BU8Crq5yeiyt8LT6OqFYmIpiSzVZksZ%2FpERXO6tfHx7HmxkXGdYYhragIuGS4GkGR9tolgJWm1lCzSggwEX%2BWXFUoQhiSjrZX%2Bk%2FZ7wH8I4zYfyr65%2F09vPCqbXrNoE7Bz2PkdndkbtGXHWl7OpRHfiR%2FM%2F6P%2Bw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:40:01,330 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '259387'}
+2024-04-11 10:40:01,330 ERROR   wandb-upload_3:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:40:01,340 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2767] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/beallhuang/YOLOv5/l6188187/media/images/Mosaics_0_7048b5fcc2452409d640.jpg?Expires=1712889507&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=rp0jPBaMSUTgd8UGhqvnNplCDAA5o%2FXyLpAonvDYp7OKUiXSIVWdR6zC1RC0sJs4o37IBxYJFVCoWicqnkO5XciD5fM%2BoZrVteCi9RlvL1Xr0Vyi5Ic8Wm1f7aP8LZJXrlc7xi0nd1qmSmTXYzH9TdX1ff6D%2BXbpnP9rXh5kx7Mr%2BAocn0aPwNtgvCUoilKQeH%2FpVDjlx2YEBTrx8cDu%2FM2iObMkljOn3H7kMCkd9l2lTCpD1UUoGHcfNHKUDtP4X7byroWqIlD77EXdf95qEdEObB0WNMEqs6Q5UuruY1D5cGCGGGWldQwH0EkSlVY5GSvYG9wF%2Fdzy8B9vPhCRgA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-04-11 10:40:01,340 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2769] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '208107'}
+2024-04-11 10:40:01,340 ERROR   wandb-upload_5:6448 [internal_api.py:upload_file():2771] upload_file response body: 
+2024-04-11 10:40:02,253 DEBUG   SenderThread:6448 [sender.py:send():379] send: telemetry
+2024-04-11 10:40:02,254 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,254 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,254 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,254 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,255 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,255 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,255 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,255 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,255 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,256 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,256 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,256 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,256 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-11 10:40:02,262 DEBUG   SenderThread:6448 [sender.py:send():379] send: history
+2024-04-11 10:40:02,263 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: summary_record
+2024-04-11 10:40:02,263 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-11 10:40:02,346 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:02,346 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:03,150 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_created():271] file/dir created: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\wandb-summary.json
+2024-04-11 10:40:03,245 DEBUG   SenderThread:6448 [sender.py:send():379] send: stats
+2024-04-11 10:40:04,152 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:40:04,377 ERROR   gpu       :6448 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-04-11 10:40:04,378 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:04,378 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:06,158 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:40:06,328 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:40:06,389 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:06,389 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:08,178 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:40:08,395 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:08,395 ERROR   gpu       :6448 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-04-11 10:40:08,661 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-11 10:40:08,662 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: stop_status
+2024-04-11 10:40:08,707 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-11 10:40:10,206 INFO    Thread-16 :6448 [dir_watcher.py:_on_file_modified():288] file/dir modified: E:\JD_PROJECT\project\ClassyVision\wandb\run-20240411_103730-l6188187\files\output.log
+2024-04-11 10:40:10,346 DEBUG   SenderThread:6448 [sender.py:send():379] send: exit
+2024-04-11 10:40:10,346 INFO    SenderThread:6448 [sender.py:send_exit():586] handling exit code: 255
+2024-04-11 10:40:10,346 INFO    SenderThread:6448 [sender.py:send_exit():588] handling runtime: 157
+2024-04-11 10:40:10,346 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-11 10:40:10,346 INFO    SenderThread:6448 [sender.py:send_exit():594] send defer
+2024-04-11 10:40:10,346 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,347 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-11 10:40:10,347 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,347 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-11 10:40:10,347 INFO    SenderThread:6448 [sender.py:transition_state():614] send defer: 1
+2024-04-11 10:40:10,347 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,347 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-11 10:40:10,347 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,347 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-11 10:40:10,347 INFO    SenderThread:6448 [sender.py:transition_state():614] send defer: 2
+2024-04-11 10:40:10,347 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,348 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-11 10:40:10,348 INFO    HandlerThread:6448 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-11 10:40:10,348 DEBUG   SystemMonitor:6448 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-11 10:40:10,351 DEBUG   SystemMonitor:6448 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-11 10:40:10,352 INFO    HandlerThread:6448 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-11 10:40:10,352 INFO    HandlerThread:6448 [interfaces.py:finish():202] Joined disk monitor
+2024-04-11 10:40:10,368 ERROR   gpu       :6448 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-04-11 10:40:10,368 INFO    HandlerThread:6448 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-11 10:40:10,368 INFO    HandlerThread:6448 [interfaces.py:finish():202] Joined memory monitor
+2024-04-11 10:40:10,368 INFO    HandlerThread:6448 [interfaces.py:finish():202] Joined network monitor
+2024-04-11 10:40:10,369 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,369 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-11 10:40:10,369 INFO    SenderThread:6448 [sender.py:transition_state():614] send defer: 3
+2024-04-11 10:40:10,369 DEBUG   SenderThread:6448 [sender.py:send():379] send: stats
+2024-04-11 10:40:10,369 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,369 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-11 10:40:10,370 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,370 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-11 10:40:10,370 INFO    SenderThread:6448 [sender.py:transition_state():614] send defer: 4
+2024-04-11 10:40:10,370 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,370 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-11 10:40:10,370 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,370 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-11 10:40:10,370 INFO    SenderThread:6448 [sender.py:transition_state():614] send defer: 5
+2024-04-11 10:40:10,370 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,370 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-11 10:40:10,371 DEBUG   SenderThread:6448 [sender.py:send():379] send: summary
+2024-04-11 10:40:10,371 INFO    SenderThread:6448 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-11 10:40:10,371 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,372 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-11 10:40:10,372 INFO    SenderThread:6448 [sender.py:transition_state():614] send defer: 6
+2024-04-11 10:40:10,372 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,372 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-11 10:40:10,372 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,372 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-11 10:40:10,375 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-11 10:40:10,697 INFO    SenderThread:6448 [sender.py:transition_state():614] send defer: 7
+2024-04-11 10:40:10,697 DEBUG   HandlerThread:6448 [handler.py:handle_request():146] handle_request: defer
+2024-04-11 10:40:10,697 INFO    HandlerThread:6448 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-11 10:40:10,697 DEBUG   SenderThread:6448 [sender.py:send_request():406] send_request: defer
+2024-04-11 10:40:10,697 INFO    SenderThread:6448 [sender.py:send_request_defer():610] handle sender defer: 7

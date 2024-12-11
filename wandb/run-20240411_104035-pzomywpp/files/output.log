@@ -1,0 +1,87 @@
+
+Plotting labels...
+[34m[1mtrain: [39m[22mScanning 'data\dingwei\labels.cache' images and labels... 623 found, 0 missing, 1 empty, 0 corrupted: 100%|██████████| 623/623 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning 'data\dingwei\labels.cache' images and labels... 623 found, 0 missing, 1 empty, 0 corrupted: 100%|██████████| 623/623 [00:00<?, ?it/s]
+Image sizes 640 train, 640 test
+Using 0 dataloader workers
+Logging results to runs\train\exp
+Starting training for 20 epochs...
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/39 [00:00<?, ?it/s]
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      0/19    0.514G   0.01744  0.005827         0   0.02327        15       640: 100%|██████████| 39/39 [01:49<00:00,  2.82s/it]
+
+
+
+
+
+
+
+
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  95%|█████████▌| 19/20 [00:25<00:00,  1.02it/s]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 20/20 [00:29<00:00,  1.49s/it]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      1/19     3.31G   0.01737  0.005321         0   0.02269        22       640: 100%|██████████| 39/39 [00:50<00:00,  1.28s/it]
+
+
+
+
+
+
+
+
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  95%|█████████▌| 19/20 [00:18<00:00,  1.03it/s]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 20/20 [00:19<00:00,  1.03it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+

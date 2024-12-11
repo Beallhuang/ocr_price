@@ -1,0 +1,36 @@
+#YOLOv5 🚀 by Ultralytics， GPL-3.0 许可证
+#用于从头开始进行中等增强 COCO 训练的超参数
+# python train.py --batch 32 --cfg yolov5m6.yaml --weights '' --data coco.yaml --img 1280 --epochs 300
+#请参阅超参数演变 https://github.com/ultralytics/yolov5#tutorials 教程
+
+lr0: 0.01 # 初始学习率 （SGD=1E-2， Adam=1E-3）
+lrf: 0.1 # 最终 OneCycleLR 学习率 （lr0 * lrf）
+momentum: 0.937 # SGD 动量/亚当贝塔1
+weight_decay: 0.0005 #优化器重量衰减5e-4
+warmup_epochs: 3.0 # 预热纪元 （分数确定）
+warmup_momentum: 0.8 # 预热初始动量
+warmup_bias_lr: 0.1 # 预热初始偏差 lr
+box: 0.05 # 箱体损耗增益
+cls: 0.3 # cls 损失增益
+cls_pw: 1.0 # cls BCELoss positive_weight
+obj: 0.7 # obj 损耗增益（带像素的比例）
+obj_pw: 1.0 # obj BCELoss positive_weight
+iou_t: 0.20 # IoU 训练阈值
+anchor_t: 4.0 # 锚点多重阈值
+# anchors:每个输出层 3 个锚点（0 个忽略）
+fl_gamma: 0.0 # 焦散伽玛（有效检测默认伽玛=1.5）
+hsv_h: 0.015 # 图像 HSV 色调增强 （分数）
+hsv_s: 0.7 # 图像 HSV-饱和度增强 （分数）
+hsv_v: 0.4 # 图像 HSV-值增强（分数）
+degrees: 0.0 # 图像旋转 （+/- 度）
+translate: 0.1 # 图像翻译（+/- 分数）
+scale: 0.9 # 图像比例（+/- 增益）
+shear: 0.0 # 图像切变 （+/- 度）
+perspective: 0.0 # 图像透视（+/- 分数），范围 0-0.001
+flipud: 0.0 # 图像上下翻转（概率）
+fliplr: 0.5 # 图像左右翻转 （概率）
+mosaic: 1.0 # 图像马赛克 （概率）
+mixup: 0.1 # 图像混淆（概率）
+copy_paste: 0.0 # 段复制粘贴（概率）
+
+{'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.006250000000000001, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}

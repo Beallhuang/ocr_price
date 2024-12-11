@@ -1,0 +1,11 @@
+[34m[1mtrain: [39m[22mScanning 'data\dingwei\labels' images and labels... 623 found, 0 missing, 1 empty, 0 corrupted: 100%|██████████| 623/623 [00:00<00:00, 2579.73it/s]
+[34m[1mval: [39m[22mScanning 'data\dingwei\labels.cache' images and labels... 623 found, 0 missing, 1 empty, 0 corrupted: 100%|██████████| 623/623 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mNew cache created: data\dingwei\labels.cache
+Plotting labels...
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
+[34m[1mautoanchor: [39m[22mAnalyzing anchors... anchors/target = 4.69, Best Possible Recall (BPR) = 1.0000
+Image sizes 640 train, 640 test
+Using 0 dataloader workers
+Logging results to runs\train\exp
+Starting training for 20 epochs...
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
